@@ -16,6 +16,7 @@ print (X.shape)
 fig, ax = plt.subplots(figsize=(12,8))  
 ax.scatter(X[:,0], X[:,1])  
 
+savefig('Wykres_1.png')
 #plt.show()
 
 def estimate_gaussian(X):  
@@ -83,6 +84,7 @@ fig, ax = plt.subplots(figsize=(12,8))
 ax.scatter(X[:,0], X[:,1])  
 ax.scatter(X[outliers[0],0], X[outliers[0],1], s=50, color='r', marker='o')  
 
+savefig('Wykres_2.png')
 #plt.show()
 
 
@@ -101,6 +103,7 @@ ax.set_xlabel('Users')
 ax.set_ylabel('Movies')  
 fig.tight_layout()  
 
+savefig('Wykres_3')
 #plt.show()
 
 def cost(params, Y, R, num_features, learning_rate):  
